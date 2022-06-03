@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="100px" viewBox="0 0 300 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>headline</title>
+    <g id="headline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="SubwaySansLCG-Bold, Subway Sans LCG" font-size="28" font-weight="bold" letter-spacing="0.484300727">
+        <g id="copy_01" transform="translate(57.500000, 23.000000)" fill="#FFFFFF">
+            <text id="15%-OFF-ANY-FOOTLONG">
+                <tspan x="0.036346" y="23">15% OFF ANY</tspan>
+                <tspan x="12.8027971" y="51" font-family="SubwaySansLCG-Medium, Subway Sans LCG" font-weight="400">FOOTLONG</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
+
+svg tspan{
+	font-family: "SubwayBold";
+}

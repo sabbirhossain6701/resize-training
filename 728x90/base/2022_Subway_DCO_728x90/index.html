@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		* {
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+			-moz-tap-highlight-color: rgba(255, 255, 255, 0);
+			-ms-tap-highlight-color: rgba(255, 255, 255, 0);
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+            user-select: none;
+
+			vertical-align: baseline;
+			font-weight: inherit;
+			font-family: inherit;
+			font-style: inherit;
+			font-size: 100%;
+			outline: none;
+			border: none;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		html,
+		body {
+			line-height: 1em;
+			height: 100%;
+		}
+
+		div {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		body {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#container {
+			visibility: visible;
+			position: absolute;
+			overflow: hidden;
+			cursor: pointer;
+			height: 90px;
+			width: 728px;
+			opacity: 1;
+			left: 0px;
+			top: 0px;
+		}
+
+		#richload-container {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left: 0px;
+			top: 0px;
+
+			-webkit-transition: opacity 0.5s linear;
+			-moz-transition: opacity 0.5s linear;
+			-ms-transition: opacity 0.5s linear;
+			-o-transition: opacity 0.5s linear;
+			transition: opacity 0.5s linear;
+		}
+        </style>
+</head>
+
+<body>
+    <div id="container">
+        <ft-richload id="richload-container" name="main_rl"></ft-richload>
+    </div>
+	<script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+	<script>
+		var myFT = new FT,
+                rl_count = 0,
+                container = myFT.$("#container");
+
+            myFT.on("richload", function() {
+                rl_count++;
+                if (rl_count >= 1) {
+                    container.css("opacity", 1);
+                }
+		});
+	</script>
+</body>
+</html>

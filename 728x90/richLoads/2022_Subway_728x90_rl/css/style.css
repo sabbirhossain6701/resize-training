@@ -1,0 +1,225 @@
+
+@font-face {
+    font-family: "SubwayBold";
+    src: url("../font/SubwaySans-Bold-Cy-Gr-Web.woff") format("woff");
+    font-style: normal;
+}
+@font-face {
+    font-family: "SubwayMedium";
+    src: url("../font/SubwaySans-Medium-Cy-Gr-Web.woff") format("woff");
+    font-style: normal;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+    box-sizing: border-box;
+    text-align: none;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+.center {
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -moz-box;
+	display: flex;
+}
+
+
+html, body {
+    line-height: 1;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    overflow: hidden;
+    opacity: 0;
+    border: 1px solid #000;
+}
+
+.container{
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 728px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+}
+
+.abs{
+    position: absolute;
+}
+
+.frame{
+    width: 728px;
+    height: 90px;
+    z-index: 1;
+}
+
+.img-responsive{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.frame1_block{
+    position: absolute;
+    background-color: #044923;
+    width: 285px;
+    height: 88px;
+    transform: translateY(-80px);
+    opacity: 0;
+    z-index: 2;
+}
+
+
+.headline{
+    position: absolute;
+    font-size: 11px;
+    opacity: 0;
+    transform: scale(0.4);
+    z-index: 3;
+}
+
+.headlineImg{
+    opacity: 0;
+    width: 300px;
+    height: auto;
+    left: 0;
+    top: -7;
+    transform: scale(0.4);
+    z-index: 3;
+}
+
+
+.headlineTxt{
+    font-family: "SubwayBold";
+    color: #fff;
+    text-align: center;
+    font-size: 27px;
+	font-weight: bold;
+    letter-spacing: 0.03em;
+    left: 49px;
+    top: 16px;
+}
+
+medium{
+    font-family: "SubwayMedium";
+}
+
+.offerCodeTop{
+    font-family: "SubwayBold";
+    color: #044923;
+    font-size: 13px;
+    left: 299px;
+    top: 25px;
+}
+.offerCodeBottom{
+    font-family: "SubwayBold";
+    color: #044923;
+    font-size: 29px;
+    left: 312px;
+    top: 37px;
+}
+
+.productImg{
+    opacity: 0;
+    left: 428px;
+    top: -13px;
+    width: 142px;
+    height: auto;
+    transform:  scale(0.4);
+    z-index: 4;
+}
+.logo{
+    z-index: 2;
+}
+.bgImg{
+    z-index: 1;
+}
+
+.cta {
+    font-family: "SubwayBold";
+    top: 51px;
+    left: 577px;
+    border: none;
+    background-color: #044923;
+    color: #fff;
+    padding: 0px 34px 0px 36px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0;
+    height: 22px;
+    font-size: 8px;
+    opacity: 0;
+    z-index: 5;
+    letter-spacing: 0.15em;
+    transform: translateY(10px);
+}
+
+.legal{
+    font-family: 'SubwayBold';
+    color: #fff;
+    font-size: 6px;
+    cursor: pointer;
+    left: 4px;
+    top: 79px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.legalPanel{
+    width: 728px;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    transform: translateY(250px);
+    z-index: 3;
+}
+.legalPanelTxt{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 7.5px;
+    line-height: 1.3em;
+    letter-spacing: 0.02em;
+    left: 14px;
+    top: 11px;
+    max-width: 728px;
+}
+.legalClose{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    left: 710px;
+    top: 7px;
+}
+
+.dis-none {
+    display: none;
+}
+
+/* Use Below code for different browsers */
+
+/* .windows-firefox{}
+.windows-IE{}
+.macOS-chrome{}
+.macOS-firefox{}
+.macOS-safari{} */
